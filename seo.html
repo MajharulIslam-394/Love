@@ -1,0 +1,101 @@
+<!DOCTYPEhtml>
+<head>
+<title>This is my first sub page</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="font/stylesheet.css" rel="stylesheet"/>
+<script type="text/javascript" src="java/jquery-1.7.1.min.js"></script> 
+</head>
+<body>
+<div class="whole">
+<header>
+<div class="header_left">
+<img src="Images/max.jpg" alt="">
+</div>
+<div class="header_right">
+<h2>Share our websites</h2>
+<div class="whole_share">
+					<div class="share">
+						<a href="http://www.facebook.com/sharer.php?u=http://it-bari.com" target="_blank"><img src="Images/facebook.jpg" alt=""/></a>
+					</div>
+					<div class="share">
+						<a target="_blank" href="http://twitter.com/share?url=http://it-bari.com"><img src="Images/twitter_PNG3.png" alt=""/></a>
+					</div>
+				    </div>
+</div>
+</header>
+<div id="sticker">
+<div class="menu">
+<ul>
+<li><a href="index.html">Home</a>
+<ul>
+<li><a href="#">aaaaa</a></li>
+<li><a href="#">aaaaa</a></li>
+<li><a href="#">aaaaa</a></li>
+<li><a href="#">aaaaa</a></li>
+<li><a href="#">aaaaa</a></li>
+<li><a href="#">aaaaa</a></li>
+<li><a href="#">aaaaa</a></li>
+</ul>
+</li>
+<li><a href="#">Music</a>
+		<ul>
+         <li><a href="seo.html">Bangla</a></li>
+         <li><a href="#">English</a></li>
+         <li><a href="#">Hindi</a></li>
+         <li><a href="#">Spanish</a></li>
+         <li><a href="#">Tamil</a></li>
+		</ul>
+        </li>
+<li><a href="#">Games</a>
+<ul>
+<li><a href="#">Clash of Clans</a></li>
+<li><a href="#">Pubg</a></li>
+<li><a href="#">Free Fire</a></li>
+<li><a href="#">Mostofa</a></li>
+<li><a href="#">Double Dragon</a></li>
+</ul>
+</li>
+<li><a href="#">Videos</a></li>
+<li><a href="#">Tutorials</a></li>
+<li><a href="#">About us</a></li>
+</ul>
+</div>
+</div>
+<div class="main_content">
+<article>
+<h2>Search Engine Optimization Tutorial</h2>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', </br></br><img src="Images/nemo.jpg" alt=""></br></br>
+
+making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+</article></BR></BR>
+<H2>Watch the demo Seo Tutorial</H2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ls3jnLnmsoA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div id="sticker">
+<div class="sidebar" Style="background:white;">
+<h2>More Video Tutorials</h2>
+<a href="#"><img src="Images/nemo.jpg"></a>
+<center><p style="font-weight:bold; color:orange">WEB-DESIGN TUOTORIAL </p></center>
+<a href="#"><img src="Images/up.jpg"></a>
+<center><p style="font-weight:bold; color:orange">SEO TUOTORIAL </p></center>
+<a href="#"><img src="Images/toystory.jpg"></a>
+<center><p style="font-weight:bold; color:orange">Graphics Tutorial</p></center></br></br>
+
+</div>
+</div>
+<CENTER><footer>&copy;All rights reserved by IT-BARI</footer></CENTER>
+<script type="text/javascript">
+$(document).ready(function() {
+	var s = $("#sticker");
+	var pos = s.position();					   
+	$(window).scroll(function() {
+		var windowpos = $(window).scrollTop();
+		if (windowpos >= pos.top) {
+			s.addClass("stick");
+		} else {
+			s.removeClass("stick");	
+		}
+	});
+});
+</body>
+</html>
